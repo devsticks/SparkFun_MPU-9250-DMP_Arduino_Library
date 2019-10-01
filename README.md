@@ -22,7 +22,7 @@ If you're looking for an AVR-compatible (Arduino Uno, SparkFun RedBoard, etc.) l
 Repository Contents
 -------------------
 
-* **/examples** - Example sketches for the library (.ino). Run these from the Arduino IDE. 
+* **/examples** - Example sketches for the library (.ino). Run these from the Arduino IDE. See **MPU9250_DMP_Dual_Quaternion.ino** for dual-IMU setup.
 * **/src** - Source files for the library (.cpp, .h).
 	* **/src/util** - Source and headers for the MPU-9250 driver and dmp configuration. These are available and adapted from [Invensene's downloads page](https://www.invensense.com/developers/software-downloads/#sla_content_45).
 * **keywords.txt** - Keywords from this library that will be highlighted in the Arduino IDE. 
@@ -44,7 +44,11 @@ Products that use this Library
 
 Version History
 ---------------
+* 1 October 2019: Added dual IMU Quaternion example
 
+Known Issues
+--------------
+* In dual IMU examples, the IMU initialized second has a strangely slow filter on its response
 
 License Information
 -------------------
